@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y", "@modelcontextprotocol/server-filesystem",
+        "--allow-dir", "/Users/reagansaw/Desktop",
+        "--allow-dir", "/Users/reagansaw/Documents",
+        "--allow-dir", "/Users/reagansaw/Downloads"
+      ]
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp", "--api-key", "fc-aaa7073158394ee294a7f502306afb8f"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp", "--browser", "chromium"]
+    }
+  }
+}

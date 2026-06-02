@@ -1,0 +1,49 @@
+# ===========================
+# Secrets & Credentials
+# ===========================
+.env
+.env.*
+**/credentials.json
+**/*.key
+**/.credentials.json
+**/client_secret*.json
+
+# ===========================
+# Claude Code 本機狀態（不該跨機同步）
+# ===========================
+.claude/settings.local.json
+.claude/projects/
+.claude/shell-snapshots/
+.claude/todos/
+.claude/statsig/
+.claude/.credentials.json
+
+# ===========================
+# gws / Google 憑證
+# ===========================
+.config/gws/credentials.enc
+.config/gws/client_secret.json
+
+# ===========================
+# 系統檔
+# ===========================
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# ===========================
+# skill 備份資料夾（不需要版控）
+# ===========================
+000_Agent/skills/*.bak.*
+
+# ===========================
+# 大檔 / 暫存
+# ===========================
+*.log
+node_modules/
+.venv*/
+__pycache__/
+playwright-images/
+*.tmp
+*.cache
